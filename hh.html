@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="city">
+    <button onclick="put()">weather</button>
+    <script>
+        function put(){
+            var cityname= document.getElementById("city").value 
+            let apiURL= `http://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=675758f28df804d9938562824be7b3ee`
+            console.log(apiURL)
+        }
+    </script>
+</body>
+</html>
